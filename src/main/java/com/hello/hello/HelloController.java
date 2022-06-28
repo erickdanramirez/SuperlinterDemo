@@ -9,23 +9,31 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
-* Hello Controller class 
+* Hello Controller class.
 */ 
 @RestController
 public class HelloController {
 
+    /**
+    * Greeting var.
+    */ 
     private String greeting;    
+    /**
+    * Final Value variable.
+    */ 
     public static final int FINALAVALUE = 5;
     
     /**
-    * Get the geeting variable        
+    * Get the geeting variable.
+    *
+    *@return greeting returns the greeting value
     */    
     public String getGreeting() {    
         return greeting;
     }
     
     /**
-    * Sets the geeting variable
+    * Sets the geeting variable.
     *
     * @param g  the text of the greeting
     */ 
@@ -34,7 +42,9 @@ public class HelloController {
     }
     
     /**
-    * Index method controller that receives all the requests
+    * Index method controller that receives all the requests.
+    *
+    *@return greeting returns the greeting value
     */  
     @RequestMapping("/")
     public String index() {
@@ -43,7 +53,9 @@ public class HelloController {
     }
     
     /**
-    * api method controller that receives the api routed requests
+    * api method controller that receives the api routed requests.
+    *
+    *@return map returns the greeting map value
     */ 
     @RequestMapping("/api")
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
