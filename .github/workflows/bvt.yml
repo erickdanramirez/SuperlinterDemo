@@ -22,3 +22,11 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+    
+    - name: Super-Linter
+      uses: github/super-linter@v4.9.4
+      env:
+          FILTER_REGEX_INCLUDE: .*src/main/.*
+          VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
