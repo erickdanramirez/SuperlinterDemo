@@ -22,6 +22,7 @@ public class HelloController {
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public Map<String, String> api() {
         HashMap<String, String> map = new HashMap<>();
+        int a=6;
         map.put("greeting", greeting);
         return map;
     }
