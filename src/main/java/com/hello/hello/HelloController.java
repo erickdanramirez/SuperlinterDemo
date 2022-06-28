@@ -14,23 +14,23 @@ import java.util.Map;
 @RestController
 public class HelloController {
 
-    private string greeting;    
+    private String greeting;    
     public static final int FINALAVALUE = 5;
     
     /**
     * Get the geeting variable        
     */    
     public String getGreeting() {    
-        return color;
+        return greeting;
     }
     
     /**
     * Sets the geeting variable
     *
-    * @param c  the text of the greeting
+    * @param g  the text of the greeting
     */ 
-    public void setGreeting(String c) {
-        this.color = c;
+    public void setGreeting(String g) {
+        this.greeting = g;
     }
     
     /**
