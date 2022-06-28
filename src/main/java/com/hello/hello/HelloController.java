@@ -18,12 +18,10 @@ public class HelloController {
     * Greeting var.
     */
     private String greeting;
-    
     /**
     * Final Value variable.
     */
     public static final int FINALAVALUE = 5;
-    
     /**
     * Get the geeting variable.
     *
@@ -32,7 +30,6 @@ public class HelloController {
     public String getGreeting() {
         return greeting;
     }
-    
     /**
     * Sets the geeting variable.
     *
@@ -41,7 +38,6 @@ public class HelloController {
     public void setGreeting(final String gre) {
         this.greeting = gre;
     }
-    
     /**
     * Index method controller that receives all the requests.
     *
@@ -52,7 +48,6 @@ public class HelloController {
         setGreeting("Hello World!");
         return getGreeting();
     }
-    
     /**
     * api method controller that receives the api routed requests.
     *
