@@ -1,9 +1,7 @@
-# SuperlinterDemo
+# Super-Linter Configuration Demo
 
-Status check 
-[![GitHub Super-Linter](https://github.com/erickdanramirez/SuperlinterDemo/workflows/bvt.yml/badge.svg)](https://github.com/erickdanramirez/SuperlinterDemo/actions/workflows/bvt.yml)
+[![Build Verification Test](https://github.com/erickdanramirez/SuperlinterDemo/actions/workflows/bvt.yml/badge.svg)](https://github.com/erickdanramirez/SuperlinterDemo/actions/workflows/bvt.yml)
 
-##Super-Linter Configuration Demo
 
 Let’s see how to configure this in our GitHub workflows, as an example we will be using a web api developed in Java that will greet us, it is not something complex, but it will help us clarify and explain the configuration process and how to use this. 
 The repository is available for you at the following URL: erickdanramirez/SuperlinterDemo (github.com)
